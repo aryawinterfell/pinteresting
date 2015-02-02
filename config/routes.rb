@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  get 'pages/quote'
+
+  get 'pages/info'
+
   root "pages#home"
-  get "about"=>"pages#about" # creates about_path
-  get "quote"=>"pages#quote"
+  get  "about"=>"pages#about" # creates about_path
+  get "quote"=>"pages#Quote"
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
